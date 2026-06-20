@@ -42,6 +42,13 @@ const expertises = [
 ];
 
 const experiences = [
+  
+  {
+    title: "Coordinateur opérations freelance",
+    company: "France / Europe",
+    date: "2023 — Présent",
+    text: "Soutien aux organisateurs, marques et agences : planification, coordination terrain, fournisseurs, matériel, visibilité de marque et exécution jour J.",
+  },
   {
     title: "Live Entertainment Supervisor",
     company: "Paris 2024 — Palais de Tokyo",
@@ -59,12 +66,6 @@ const experiences = [
     company: "HelmsBriscoe",
     date: "2024",
     text: "Recherche de lieux pour séminaires, événements corporate et réunions d’affaires selon budget, capacité, localisation et faisabilité opérationnelle.",
-  },
-  {
-    title: "Coordinateur opérations freelance",
-    company: "France / Europe",
-    date: "2023 — Présent",
-    text: "Soutien aux organisateurs, marques et agences : planification, coordination terrain, fournisseurs, matériel, visibilité de marque et exécution jour J.",
   },
 ];
 
@@ -106,13 +107,19 @@ export default function App() {
         {profile.location}
       </div>
 
-      <h1 className="text-5xl font-semibold tracking-tight md:text-7xl">
-        {profile.name}
+      <p className="text-sm font-medium uppercase tracking-[0.28em] text-white/45">
+        Kevin Lefant
+      </p>
+
+      <h1 className="mt-5 max-w-4xl text-4xl font-semibold leading-[1.05] tracking-tight md:text-6xl">
+        Coordination opérationnelle,
+        <br />
+        partenaires & systèmes.
       </h1>
 
-      <p className="mt-5 text-2xl text-white/85 md:text-4xl">
-        {profile.title}
-      </p>
+<p className="mt-6 text-xl text-white/70 md:text-2xl">
+  Événements · Activations terrain · Outils métier
+</p>
 
       <p className="mt-8 max-w-2xl text-lg leading-8 text-white/65">
         {profile.baseline}
