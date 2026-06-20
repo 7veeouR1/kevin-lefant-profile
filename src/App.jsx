@@ -220,9 +220,18 @@ export default function App() {
 
         <div className="mt-10 grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
           <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-7">
-            <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-2xl bg-white text-black">
-              <Sparkles size={22} />
-            </div>
+            <a
+              href="https://www.quidamos.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-white transition hover:scale-105"
+            >
+              <img
+                src="/logo-quidam.png"
+                alt="Quidam OS"
+                className="h-7 w-7 object-contain"
+              />
+            </a>
 
             <h3 className="text-3xl font-semibold">Quidam OS</h3>
             <p className="mt-4 leading-7 text-white/60">
@@ -248,9 +257,21 @@ export default function App() {
           </div>
 
           <div className="rounded-3xl border border-orange-400/20 bg-orange-400/[0.06] p-7">
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-orange-300/20 px-4 py-2 text-sm text-orange-100/80">
-              <Radio size={15} />
-              Focus terrain
+            <div className="mb-6 flex flex-wrap items-center gap-3">
+              <div className="inline-flex items-center gap-2 rounded-full border border-orange-300/20 px-4 py-2 text-sm text-orange-100/80">
+                <Radio size={15} />
+                Focus terrain
+              </div>
+
+              <a
+                href="https://vizi-board.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm font-medium text-white/85 backdrop-blur transition hover:bg-white/10"
+              >
+                Découvrir ViziBoard
+                <ExternalLink size={16} />
+              </a>
             </div>
 
             <h3 className="text-3xl font-semibold">ViziBoard</h3>
