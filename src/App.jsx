@@ -100,6 +100,7 @@ export default function App() {
       transition={{ duration: 0.7 }}
       className="max-w-3xl"
     >
+
       <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/10 px-4 py-2 text-sm text-white/75 backdrop-blur">
         <MapPin size={16} />
         {profile.location}
@@ -320,26 +321,30 @@ export default function App() {
 
 function Navbar() {
   return (
-    <header className="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-[#050506]/80 backdrop-blur-xl">
-      <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
-        <a href="#accueil" className="font-semibold tracking-tight">
-          Kevin Lefant
+    <header className="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-[#050506]/85 backdrop-blur-xl">
+      <nav className="mx-auto flex h-24 max-w-6xl items-center justify-between px-5">
+        <a href="#accueil" className="flex items-center">
+          <img
+            src="/logo-kevin.svg"
+            alt="Kevin Lefant"
+            className="h-6 w-auto object-contain"
+          />
         </a>
 
-        <div className="hidden items-center gap-6 text-sm text-white/60 md:flex">
-          <a href="#expertises" className="hover:text-white">
+        <div className="hidden items-center gap-8 text-sm font-medium text-white/60 md:flex">
+          <a href="#expertises" className="transition hover:text-white">
             Expertises
           </a>
-          <a href="#experiences" className="hover:text-white">
+          <a href="#experiences" className="transition hover:text-white">
             Expériences
           </a>
-          <a href="#methode" className="hover:text-white">
+          <a href="#methode" className="transition hover:text-white">
             Méthode
           </a>
-          <a href="#systemes" className="hover:text-white">
+          <a href="#systemes" className="transition hover:text-white">
             Systèmes
           </a>
-          <a href="#contact" className="hover:text-white">
+          <a href="#contact" className="transition hover:text-white">
             Contact
           </a>
         </div>
